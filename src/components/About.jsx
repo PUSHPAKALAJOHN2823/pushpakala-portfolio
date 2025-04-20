@@ -1,5 +1,6 @@
 import { number } from 'prop-types'
-import React from 'react'
+import React from 'react';
+import heroImage from '../../public/assets/heroImage';
 
 
 const aboutItems = [
@@ -45,7 +46,7 @@ const About = () => {
                         ))
                     }
 
-                    <img src="/assets/heroImage.png" alt="logo" 
+                    <img src={heroImage} alt="logo" 
                     width={30}
                     height={30}   
                     className='ml-auto md:w-[40px] md:h-[40px]' />
