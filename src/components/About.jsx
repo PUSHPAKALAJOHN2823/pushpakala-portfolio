@@ -1,6 +1,6 @@
 import { number } from 'prop-types'
 import React from 'react';
-import heroImage from '../../public/assets/heroImage';
+import heroImage from '../../public/assets/heroImage.png';
 
 
 const aboutItems = [
