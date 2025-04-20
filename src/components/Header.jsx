@@ -6,6 +6,7 @@
 
 import Navbar from '../components/Navbar'
 import { useState } from 'react';
+import heroImage from '../../public/assets/heroImage.png';
 
 
 const Header = () => {
@@ -18,7 +19,7 @@ const Header = () => {
           <a href="/"
           className='logo' 
           >
-            <img src="/assets/heroImage.png" width={40}
+            <img src={heroImage} width={40}
             height={40}
             alt="hero" />
 

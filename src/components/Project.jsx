@@ -1,17 +1,19 @@
 import React from 'react';
 
 import ProjectCard from './ProjectCard';
+import proj1Img from '../../public/assets/project1.jpg';
+import proj2Img from '../../public/assets/project2.png';
 
 
 const projects = [
     {
-      imgSrc: '/assets/project1.jpg',
+      imgSrc:{proj1Img},
       title: 'Static Drone Website',
       tags: ['Frontend','React','Figma'],
       projectLink: 'https://github.com/PUSHPAKALAJOHN2823/DRONE-FE'
     },
     {
-      imgSrc: '/assets/project2.png',
+      imgSrc: {proj2Img},
       title: 'E-Commerce Website',
       tags: ['React', 'Vite','Tailwindcss'],
       projectLink: 'https://github.com/PUSHPAKALAJOHN2823/E-Commerce'

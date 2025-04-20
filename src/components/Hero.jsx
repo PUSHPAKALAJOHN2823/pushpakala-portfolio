@@ -1,5 +1,6 @@
 import React from 'react'
-import { ButtonPrimary, ButtonOutline } from './Button'
+import { ButtonPrimary, ButtonOutline } from './Button';
+import profile from '../../public/assets/push.jpg';
 
 const Hero = () => {
   return (
@@ -11,7 +12,7 @@ const Hero = () => {
           <div className="flex items-center gap-3">
             <figure className="img-box w-9 h-9 rounded-lg overflow-hidden">
               <img
-                src="/assets/push.jpg"
+                src={profile}
                 alt="profile"
                 width={40}
                 height={40}
@@ -43,7 +44,7 @@ const Hero = () => {
         <div className="mt-10 lg:mt-0">
           <figure className="w-full max-w-[320px] sm:max-w-[400px] lg:max-w-[480px] mx-auto lg:ml-auto bg-gradient-to-t from-sky-400 via-25% via-sky-400/40 to-65% rounded-[60px] overflow-hidden">
             <img
-              src="/assets/push.jpg"
+              src={profile}
               alt="banner"
               width={656}
               height={800}

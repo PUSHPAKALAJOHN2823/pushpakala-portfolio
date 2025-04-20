@@ -1,47 +1,55 @@
 import React from 'react';
 
 import SkillCard from './SkillCard';
+import figma from '../../public/assets/figma.png';
+import css from '../../public/assets/css.png';
+import js from '../../public/assets/javascript.png';
+import vite from '../../public/assets/vite.png';
+import git from '../../public/assets/githubIcon.png';
+import python from '../../public/assets/python.png';
+import react from '../../public/assets/react.png';
+import tail from '../../public/assets/tailwind.jpeg';
 
 
 
 const skillItem = [
     {
-      imgSrc: '/assets/figma.png',
+      imgSrc: {figma},
       label: 'Figma',
       desc: 'Design tool'
     },
     {
-      imgSrc: '/assets/css.png',
+      imgSrc: {css},
       label: 'CSS',
       desc: 'User Interface'
     },
     {
-      imgSrc: '/assets/javascript.png',
+      imgSrc: {js},
       label: 'JavaScript',
       desc: 'Interaction'
     },
     {
-      imgSrc: '/assets/vite.png',
+      imgSrc: {vite},
       label: 'ViteJS',
       desc: 'Frontend Tool'
     },
     {
-      imgSrc: '/assets/githubIcon.png',
+      imgSrc: {git},
       label: 'ExpressJS',
       desc: 'Node Framework'
     },
     {
-      imgSrc: '/assets/python.png',
+      imgSrc: {python},
       label: 'Python',
       desc: 'Programming'
     },
     {
-      imgSrc: '/assets/react.png',
+      imgSrc: {react},
       label: 'React',
       desc: 'Framework'
     },
     {
-      imgSrc: '/assets/tailwind.jpeg',
+      imgSrc: {tail},
       label: 'TailwindCSS',
       desc: 'User Interface'
     },
