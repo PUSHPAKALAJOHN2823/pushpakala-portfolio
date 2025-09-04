@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 import heroImage from '@/assets/hero-image.jpg';
 
-const Hero = () => {
+const Hero = (): JSX.Element => {
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
     if (element) {
@@ -11,13 +11,16 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section
+      id="hero"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden"
+    >
       {/* Background */}
       <div className="absolute inset-0 hero-gradient opacity-50"></div>
       <div className="absolute inset-0">
-        <img 
-          src={heroImage} 
-          alt="Professional developer workspace" 
+        <img
+          src={heroImage}
+          alt="Professional developer workspace"
           className="w-full h-full object-cover opacity-30 brightness-50"
         />
       </div>
@@ -32,22 +35,23 @@ const Hero = () => {
               Developer
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Passionate about creating interactive and responsive web applications 
-              using modern technologies like React, Tailwind CSS, and JavaScript. 
-              Currently expanding skills in backend development with Node.js and MongoDB to build full-stack applications.
+              Passionate about creating interactive and responsive web applications
+              using modern technologies like React, Tailwind CSS, and JavaScript.
+              Currently expanding skills in backend development with Node.js and
+              MongoDB to build full-stack applications.
             </p>
           </div>
 
           <div className="slide-up flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               onClick={() => scrollToSection('#projects')}
               className="hover-glow glow-effect"
             >
               View My Work
             </Button>
-            <Button 
-              variant="outline" 
+            <Button
+              variant="outline"
               size="lg"
               onClick={() => scrollToSection('#contact')}
               className="hover-glow"
@@ -67,7 +71,7 @@ const Hero = () => {
               <Github size={24} />
             </a>
             <a
-              href="https://www.linkedin.com/in/pushpajohn?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BjmpApyncRC%2BAKfnm3FMP6A%3D%3D"
+              href="https://www.linkedin.com/in/pushpajohn"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-secondary hover:bg-primary transition-all duration-300 hover-glow"
