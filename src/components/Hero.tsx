@@ -67,7 +67,7 @@ const Hero = () => {
               <Github size={24} />
             </a>
             <a
-              href="www.linkedin.com/in/pushpajohn"
+              href="https://www.linkedin.com/in/pushpajohn?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BjmpApyncRC%2BAKfnm3FMP6A%3D%3D"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-secondary hover:bg-primary transition-all duration-300 hover-glow"
