@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Code2, Database, Cloud, GitBranch, Palette } from 'lucide-react';
+import { Code2, Database, Cloud, GitBranch, Palette, Cpu } from 'lucide-react';
 
 // ✅ Import icons/images
 import htmlIcon from '../assets/html.png';
@@ -13,14 +13,16 @@ import bootstrapIcon from '../assets/boot.jpeg';
 import nodeIcon from '../assets/node.png';
 import expressIcon from '../assets/exp.jpeg';
 import apiIcon from '../assets/rest.jpeg';
-import vercelIcon from '../assets/vercel.jpeg';
-import renderIcon from '../assets/render.jpeg';
-import githubActionsIcon from '../assets/git.jpeg';
+import jwtIcon from '../assets/jwt.png'; // ➡️ add a JWT icon in assets
+import mongodbIcon from '../assets/mongo.png';
+import postgresIcon from '../assets/postgre.png';
+import mysqlIcon from '../assets/sql.png';
 import githubIcon from '../assets/githubIcon.png';
-import webstormIcon from '../assets/web.jpeg';
-import unixIcon from '../assets/unix.jpeg';
 import figmaIcon from '../assets/figma.png';
-import designIcon from '../assets/ui.jpeg';
+import vscodeIcon from '../assets/vscode.png';
+import postmanIcon from '../assets/postman.png';
+import tensorflowIcon from '../assets/tf.png';
+import openaiIcon from '../assets/openAi.png';
 
 const Skills = () => {
   const skillCategories = [
@@ -32,8 +34,8 @@ const Skills = () => {
         { name: 'HTML5', icon: htmlIcon },
         { name: 'CSS3', icon: cssIcon },
         { name: 'JavaScript (ES6+)', icon: jsIcon },
-        { name: 'React.js', icon: reactIcon },
         { name: 'TypeScript', icon: tsIcon },
+        { name: 'React.js', icon: reactIcon },
         { name: 'Redux', icon: reduxIcon },
         { name: 'Tailwind CSS', icon: tailwindIcon },
         { name: 'Bootstrap', icon: bootstrapIcon }
@@ -46,17 +48,27 @@ const Skills = () => {
       skills: [
         { name: 'Node.js', icon: nodeIcon },
         { name: 'Express.js', icon: expressIcon },
-        { name: 'REST APIs', icon: apiIcon }
+        { name: 'REST APIs', icon: apiIcon },
+        { name: 'JWT Authentication', icon: jwtIcon }
       ]
     },
     {
-      category: 'Deployment & Cloud',
+      category: 'Databases',
       icon: Cloud,
       color: 'text-purple-500',
       skills: [
-        { name: 'Vercel', icon: vercelIcon },
-        { name: 'Render', icon: renderIcon },
-        { name: 'GitHub Actions', icon: githubActionsIcon }
+        { name: 'MongoDB', icon: mongodbIcon },
+        { name: 'PostgreSQL', icon: postgresIcon },
+        { name: 'MySQL', icon: mysqlIcon }
+      ]
+    },
+    {
+      category: 'AI / Machine Learning',
+      icon: Cpu,
+      color: 'text-yellow-500',
+      skills: [
+        { name: 'TensorFlow', icon: tensorflowIcon },
+        { name: 'OpenAI API', icon: openaiIcon }
       ]
     },
     {
@@ -65,17 +77,9 @@ const Skills = () => {
       color: 'text-orange-500',
       skills: [
         { name: 'Git & GitHub', icon: githubIcon },
-        { name: 'WebStorm', icon: webstormIcon },
-        { name: 'Unix Commands', icon: unixIcon }
-      ]
-    },
-    {
-      category: 'Design & Collaboration',
-      icon: Palette,
-      color: 'text-pink-500',
-      skills: [
-        { name: 'Figma', icon: figmaIcon },
-        { name: 'UI/UX Basics', icon: designIcon }
+        { name: 'VS Code', icon: vscodeIcon },
+        { name: 'Postman', icon: postmanIcon },
+        { name: 'Figma', icon: figmaIcon }
       ]
     }
   ];
@@ -90,14 +94,14 @@ const Skills = () => {
             </h2>
             <div className="w-24 h-1 bg-primary mx-auto mb-8"></div>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              A mix of technologies, tools, and platforms I use to design, build, and deploy applications
+              A blend of frontend, backend, database, and AI/ML expertise that I use to design, build, and deploy modern applications.
             </p>
           </div>
 
           {/* Cards Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {skillCategories.map((category, categoryIndex) => (
-              <Card 
+              <Card
                 key={category.category}
                 className="card-gradient border border-border hover-glow scale-on-hover slide-up"
                 style={{ animationDelay: `${categoryIndex * 0.1}s` }}

@@ -5,10 +5,20 @@ import { ExternalLink, Github, Eye } from 'lucide-react';
 import resume from '../assets/resume.jpg';
 import movie from '../assets/movie.jpg';
 import weather from '../assets/weather.jpg';
-import ecommerce from '../assets/ecommerce.jpg'
+import ecommerce from '../assets/ecommerce.jpg';
+import bulkmail from '../assets/bulkmail.png';
 
 const Projects = () => {
   const projects = [
+    {
+    title: 'Bulk Mail Sender',
+    description:
+      'A tool that allows sending bulk emails efficiently with customizable templates, CSV-based contact imports, and email scheduling features.',
+    image: bulkmail,
+    technologies: ['Node.js', 'Express', 'Nodemailer', 'React.js', 'MongoDB'],
+    liveUrl: 'https://bulkmail-webapp-fe.onrender.com', // replace with actual live URL
+    githubUrl: 'https://github.com/PUSHPAKALAJOHN2823/BulkMail_Webapp', // replace with actual GitHub link
+  },
     {
       title: 'AI Powered Resume Analyzer',
       description:

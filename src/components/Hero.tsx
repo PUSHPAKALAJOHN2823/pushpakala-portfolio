@@ -30,15 +30,17 @@ const Hero = (): JSX.Element => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="fade-in">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 mt-24">
-              <span className="text-gradient">Frontend</span>
+              <span className="text-gradient">MERN Stack</span>
               <br />
               Developer
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Passionate about creating interactive and responsive web applications
-              using modern technologies like React, Tailwind CSS, and JavaScript.
-              Currently expanding skills in backend development with Node.js and
-              MongoDB to build full-stack applications.
+            <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+              Full-Stack Developer skilled in building modern web applications using 
+              <strong> MongoDB, Express, React, and Node.js</strong>. Experienced in 
+              REST APIs, authentication, and database management, with additional expertise 
+              in <strong>AI/ML integrations</strong> using TensorFlow, OpenAI API, and 
+              data science workflows. Passionate about creating scalable, 
+              responsive, and AI-powered applications.
             </p>
           </div>
 
@@ -48,7 +50,7 @@ const Hero = (): JSX.Element => {
               onClick={() => scrollToSection('#projects')}
               className="hover-glow glow-effect"
             >
-              View My Work
+              View My Projects
             </Button>
             <Button
               variant="outline"
@@ -56,7 +58,7 @@ const Hero = (): JSX.Element => {
               onClick={() => scrollToSection('#contact')}
               className="hover-glow"
             >
-              Let's Connect
+              Let&apos;s Connect
             </Button>
           </div>
 

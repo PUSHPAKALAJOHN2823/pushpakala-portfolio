@@ -1,9 +1,7 @@
 import React from 'react';
-import profile from '../assets/push.jpg'
+import profile from '../assets/push.jpg';
 
 const About = () => {
-  
-
   return (
     <section id="about" className="py-20 bg-secondary/10">
       <div className="container mx-auto px-6">
@@ -19,9 +17,9 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Profile Photo */}
             <div className="flex justify-center slide-up">
-              <div className="w-96 h-96 rounded-full overflow-hidden shadow-xl border-4 border-primary/30">
+              <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-xl border-4 border-primary/30">
                 <img
-                  src={profile} // place your photo in public/profile.jpg
+                  src={profile}
                   alt="Profile"
                   className="object-cover w-full h-full"
                 />
@@ -29,25 +27,30 @@ const About = () => {
             </div>
 
             {/* Bio & Skills */}
-            <div className="slide-up space-y-6">
+            <div className="slide-up space-y-6 text-center lg:text-left">
               <div className="space-y-4">
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  I’m a passionate <strong>Frontend Developer</strong> skilled in{" "}
-                  <strong>React.js, JavaScript, TypeScript, HTML, CSS, and TailwindCSS</strong>.
-                  I focus on building responsive, interactive, and user-friendly web applications.
+                  I’m a <strong>MERN Stack Developer</strong> skilled in{" "}
+                  <strong>MongoDB, Express.js, React.js, Node.js</strong> with 
+                  experience in <strong>REST APIs, authentication, SQL, and cloud deployment</strong>. 
+                  I also have a strong foundation in <strong>AI & Machine Learning</strong>, 
+                  integrating models with web apps using TensorFlow and OpenAI API.
                 </p>
+
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  My journey includes working as a <strong>Frontend Developer Intern</strong> and 
-                  building impactful projects such as a Resume Analyzer and Task Management system. 
-                  These experiences have strengthened my skills in modern frontend technologies and API integration.
+                  My experience includes working as a <strong>Frontend Developer Intern</strong>, 
+                  where I built responsive UIs, optimized state management, and integrated APIs. 
+                  I have also developed projects such as an <strong>AI Resume Builder SaaS</strong>, 
+                  <strong> Intelligent Image Classifier</strong>, and <strong>Task Management System</strong>.
                 </p>
+
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Apart from coding, I enjoy exploring <strong>AI and data science</strong>, and I’m always 
-                  eager to learn emerging technologies that push my development skills further.
+                  Outside of coding, I enjoy exploring <strong>AI, data science, 
+                  and cloud technologies</strong>. I’m passionate about building 
+                  scalable, user-focused applications and continuously expanding my 
+                  technical expertise.
                 </p>
               </div>
-
-              
             </div>
           </div>
         </div>
@@ -57,4 +60,3 @@ const About = () => {
 };
 
 export default About;
-
