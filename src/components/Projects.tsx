@@ -11,6 +11,15 @@ import bulkmail from '../assets/bulkmail.png';
 const Projects = () => {
   const projects = [
     {
+  title: 'AuraWear - E-Commerce Platform',
+  description: 'A full-stack e-commerce web application featuring secure authentication, real-time payments via Razorpay, and a responsive user interface. Includes product management, order tracking, and an admin dashboard for analytics and control.',
+  image: ecommerce,
+  technologies: ['React', 'Redux Toolkit', 'Node.js', 'Express.js', 'MongoDB', 'Razorpay', 'JWT', 'Tailwind CSS'],
+  liveUrl: 'https://auraecom-fe.onrender.com',
+  githubUrl: 'https://github.com/PUSHPAKALAJOHN2823/AuraEcom',
+  featured: true
+},
+    {
     title: 'Bulk Mail Sender',
     description:
       'A tool that allows sending bulk emails efficiently with customizable templates, CSV-based contact imports, and email scheduling features.',
@@ -46,15 +55,6 @@ const Projects = () => {
       liveUrl: 'https://weather-app-cyan-iota-78.vercel.app/',
       githubUrl:'https://github.com/PUSHPAKALAJOHN2823/weather-app'
       
-    },
-    {
-      title: 'E-commerce Website – Frontend',
-      description:
-        'Developed a responsive e-commerce site with product pages, cart functionality, and category filters. Integrated mock product data, React Router for routing, and styled the UI with Tailwind CSS.',
-      image: ecommerce,
-      technologies: ['React.js', 'Tailwind CSS', 'React Router'],
-      liveUrl: 'https://pushpakalajohn2823.github.io/E-Commerce/',
-      githubUrl: 'https://github.com/PUSHPAKALAJOHN2823/E-Commerce/tree/master',
     },
   ];
 

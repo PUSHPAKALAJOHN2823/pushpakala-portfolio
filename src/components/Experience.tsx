@@ -5,14 +5,14 @@ import { CalendarDays, MapPin, Building } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      title: 'Frontend Developer Intern',
+      title: 'MERN Stack Developer Intern',
       company: 'Bernacle',
       location: 'Coimbatore',
-      period: 'Jan 2021 - May 2021',
+      period: 'Jan 2025 - May 2025',
       type: 'Internship',
       description:
         'Created interactive user interfaces using modern JavaScript frameworks. Worked closely with UX/UI designers to implement pixel-perfect designs.',
-      technologies: ['React.js', 'CSS3', 'SASS', 'JavaScript', 'Figma' , 'Tailwind', 'Webstorm'],
+      technologies: ['React.js', 'CSS3', 'SASS', 'JavaScript', 'Figma' , 'Tailwind', 'Webstorm' , 'Node' , 'Express' , 'MongoDB'],
       achievements: [
         'Converted 10+ Figma designs to responsive web pages',
         'Reduced CSS bundle size by 30% through optimization',
