@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowDown, Github, Linkedin, Mail, Download } from 'lucide-react';
 import heroImage from '@/assets/hero-image.jpg';
 
 const Hero = (): JSX.Element => {
@@ -44,6 +44,7 @@ const Hero = (): JSX.Element => {
             </p>
           </div>
 
+          {/* Action Buttons */}
           <div className="slide-up flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <Button
               size="lg"
@@ -60,6 +61,16 @@ const Hero = (): JSX.Element => {
             >
               Let&apos;s Connect
             </Button>
+            <a
+              href="/Pushpakala_Resume.pdf"
+              download="PushpakalaJohn_Resume.pdf"
+              className="hover-glow glow-effect"
+            >
+              <Button size="lg" className="flex items-center gap-2">
+                <Download size={18} />
+                View My Resume
+              </Button>
+            </a>
           </div>
 
           {/* Social Links */}
